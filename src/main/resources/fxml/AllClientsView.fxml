@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sport.center.terminal.forms.client.AllClientsViewController">
+    <children>
+      <TabPane fx:id="membersTabPane" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" side="BOTTOM" stylesheets="@../styles/main_tab.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Active Members">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane fx:id="pnlActiveMembers" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="InactiveMembers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane fx:id="pnlInactiveMembers" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+        <TextField fx:id="txtFilter" layoutX="378.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="208.0" promptText="بحث" style="-fx-background-radius: 10em;" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Label fx:id="lblActiveClientsCount" layoutX="18.0" layoutY="18.0" text="no members" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0" />
+      <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="378.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="18.0">
+         <image>
+            <Image url="@../icons/magnifying-glass.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnActivate" mnemonicParsing="false" prefHeight="37.0" prefWidth="144.0" stylesheets="@../styles/main_button.css" text="Deactivate" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label fx:id="lblInactiveClientsCount" layoutX="28.0" layoutY="28.0" text="no members" textFill="#d32f2f" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="25.0" />
+    </children>
+</AnchorPane>

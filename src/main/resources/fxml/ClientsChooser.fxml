@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sport.center.terminal.forms.client.ClientChooserController">
+    <children>
+        <TextField fx:id="txtFilter" layoutX="378.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="208.0" promptText="بحث" style="-fx-background-radius: 10em;" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Label fx:id="lblClientsCount" layoutX="18.0" layoutY="18.0" text="no members" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <BorderPane fx:id="clientsPanel" layoutX="14.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0" />
+      <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="378.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="18.0">
+         <image>
+            <Image url="@../icons/magnifying-glass.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAdd" layoutX="22.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Add" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+.button {
+    -fx-background-color: #217345;
+    -fx-background-radius: 0em;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+
+}
+ 
+.button:hover {
+-fx-background-color: #3bc578;
+-fx-color: -fx-hover-base;
+}

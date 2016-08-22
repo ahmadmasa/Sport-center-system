@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="586.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sport.center.terminal.forms.payment.ClientPaymentFormController">
+    <children>
+        <Pane fx:id="printPane" layoutX="9.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="586.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Line endX="20.0" layoutX="115.0" layoutY="375.0" startX="-100.0" />
+            <ImageView fitHeight="177.0" fitWidth="586.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/payment_header.png" />
+               </image>
+            </ImageView>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="27.0" layoutX="255.0" layoutY="186.0" stroke="BLACK" strokeType="INSIDE" width="91.0" />
+                <Label fx:id="lblAmmountDigits" alignment="CENTER" layoutX="259.0" layoutY="191.0" prefHeight="17.0" prefWidth="84.0" />
+                <DatePicker fx:id="txtDate" layoutX="384.0" layoutY="175.0" prefHeight="25.0" prefWidth="111.0" />
+            <Label fx:id="lblName" alignment="BOTTOM_LEFT" layoutX="98.0" layoutY="240.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="466.0" text="وصلني من السيد / السادة ">
+               <font>
+                  <Font name="Segoe UI Semilight" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblAmmountText" alignment="BOTTOM_LEFT" layoutX="98.0" layoutY="276.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="466.0" text="مبلغ وقدره">
+               <font>
+                  <Font name="Segoe UI Semilight" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblComment" alignment="BOTTOM_LEFT" layoutX="98.0" layoutY="311.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="466.0" text="وذلك عن">
+               <font>
+                  <Font name="Segoe UI Semilight" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblComment1" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="324.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="111.0" text="توقيع المستلم">
+               <font>
+                  <Font name="Segoe UI Semilight" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lblComment11" alignment="CENTER" layoutX="259.0" layoutY="162.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="84.0" text="سند قبض">
+               <font>
+                  <Font name="Segoe UI Semilight" size="13.0" />
+               </font>
+            </Label>
+                <TextField fx:id="txtAmmountDigits" alignment="CENTER" layoutX="259.0" layoutY="187.0" prefHeight="25.0" prefWidth="84.0" />
+                <TextField fx:id="txtName" layoutX="161.0" layoutY="237.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="257.0" />
+                <TextField fx:id="txtAmmountText" layoutX="161.0" layoutY="273.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="257.0" />
+                <TextField fx:id="txtComment" layoutX="161.0" layoutY="308.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="257.0" />
+            <Label fx:id="lblDate" alignment="BOTTOM_LEFT" layoutX="409.0" layoutY="178.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="155.0" text="التاريخ">
+               <font>
+                  <Font name="Segoe UI Semilight" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            </children>
+        </Pane>
+        <Button fx:id="btnPrintPreview" layoutX="447.0" layoutY="361.0" mnemonicParsing="false" onAction="#printPreviewAction" prefHeight="25.0" prefWidth="139.0" text="Print Preview" />
+        <Button fx:id="btnPrint" layoutX="299.0" layoutY="361.0" mnemonicParsing="false" onAction="#printAction" prefHeight="25.0" prefWidth="139.0" text="Print " />
+        <Button fx:id="btnBack" layoutX="447.0" layoutY="361.0" mnemonicParsing="false" onAction="#backAction" prefHeight="25.0" prefWidth="139.0" text="back" />
+    </children>
+</AnchorPane>

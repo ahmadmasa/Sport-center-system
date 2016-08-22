@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="printPane" prefHeight="212.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sport.center.terminal.forms.client.ClientCardController">
+   <children>
+      <ImageView fitHeight="143.0" fitWidth="201.0" layoutX="1.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/salah_al_deen_logo_mini.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblClientName" layoutX="98.0" layoutY="68.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="129.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblClientHumanReadableId" layoutX="97.0" layoutY="98.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="129.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblClientSport" layoutX="98.0" layoutY="127.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="129.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblClientBelt" layoutX="97.0" layoutY="154.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="129.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="155.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" alignment="BOTTOM_LEFT" layoutX="230.0" layoutY="67.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="51.0" text="الاسم" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Segoe UI Semilight" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lblName1" alignment="BOTTOM_LEFT" layoutX="230.0" layoutY="97.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="51.0" text="الرقم" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font name="Segoe UI Semilight" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lblName2" alignment="BOTTOM_LEFT" layoutX="230.0" layoutY="126.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="51.0" text="الرياضه" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="Segoe UI Semilight" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lblName3" alignment="BOTTOM_LEFT" layoutX="230.0" layoutY="153.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="51.0" text="الحزام" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="155.0">
+         <font>
+            <Font name="Segoe UI Semilight" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <ImageView fitHeight="19.0" fitWidth="251.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@../images/card_design-header.png" />
+         </image>
+      </ImageView>
+      <Line endX="210.0" fill="BLACK" layoutX="101.0" layoutY="59.0" startX="-20.0" strokeLineCap="ROUND" strokeWidth="0.3" AnchorPane.topAnchor="55.0" />
+      <Label fx:id="lblName4" alignment="CENTER" layoutX="210.0" layoutY="30.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="19.0" prefWidth="88.0" text="بطاقه شخصيه" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Segoe UI Semilight" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="216.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sport.center.terminal.forms.payment.AddReceivableFormController">
+   <children>
+      <TextField fx:id="txtAmmount" layoutX="93.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="223.0" promptText="المبلغ المطلوب" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="120.0" />
+      <TextField fx:id="txtPayedAmmount" layoutX="93.0" layoutY="45.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="223.0" promptText="المبلغ المدفوع" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="120.0" />
+      <TextField fx:id="txtComment" layoutX="93.0" layoutY="74.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="223.0" promptText="ملاحظات" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="120.0" />
+      <DatePicker fx:id="date" layoutX="93.0" layoutY="107.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="223.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="120.0" />
+      <Button fx:id="btnAdd" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" onAction="#addReceivable" prefHeight="25.0" prefWidth="90.0" text="اضافه" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="218.0" layoutY="18.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="98.0" text="المبلغ المطلوب" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="218.0" layoutY="49.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="98.0" text="المبلغ المدفوع" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="228.0" layoutY="78.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="98.0" text="ملاحظات" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="228.0" layoutY="111.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="98.0" text="التاريخ" AnchorPane.rightAnchor="30.0" />
+   
+   </children>
+</AnchorPane>

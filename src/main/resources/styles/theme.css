@@ -1,0 +1,15 @@
+.root {
+	-fx-font-family: "Segoe UI Semilight";
+}
+
+
+.popover > .content {
+    -fx-text-fill: #000000; 
+
+}
+
+
+.popover .label {
+    -fx-text-fill: #000000; 
+
+}

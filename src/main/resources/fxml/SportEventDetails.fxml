@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sport.center.terminal.forms.event.SportEventDetailsController">
+    <children>
+     <HBox layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="900.0" style="-fx-background-color: #e3e3e3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnAddMember" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/main_button.css" text="Add Member">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/profile-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnDeleteMembers" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/main_button.css" text="Delete Members">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/profile-delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnDeleteEvent" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/main_button.css" text="Delete This Event">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/calendar-5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnExportSheet" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="90.0" stylesheets="@../styles/excel_button.css" text="Export Excel" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/excel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+        <TextField fx:id="txtFilter" layoutX="378.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="208.0" promptText="بحث" style="-fx-background-radius: 10em;" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="80.0" />
+      <Label fx:id="lblClientsCount" layoutX="18.0" layoutY="18.0" text="no members" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="85.0" />
+      <BorderPane fx:id="sportEventsPanel" layoutX="14.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="120.0" />
+      <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="378.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="85.0">
+         <image>
+            <Image url="@../icons/magnifying-glass.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

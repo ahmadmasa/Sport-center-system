@@ -1,0 +1,29 @@
+.button {
+    -fx-background-color: #D32F2F;
+    -fx-background-radius: 0em;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+	
+
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+}
+ 
+.button:hover {
+-fx-background-color: #f03535;
+-fx-color: -fx-hover-base;
+}
+ 
+
+.menu-button {
+    -fx-background-color: #D32F2F;
+    -fx-background-radius: 0em;
+    -fx-background-insets: 0,1,2,0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+
+.menu-button:hover {
+-fx-background-color: #f03535;
+-fx-color: -fx-hover-base;
+}

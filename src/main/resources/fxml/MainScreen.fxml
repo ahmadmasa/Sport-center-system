@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="1151.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sport.center.terminal.main.MainScreenController">
+   <children>
+      <VBox prefHeight="524.0" prefWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <MenuButton fx:id="menuSportFilter" mnemonicParsing="false" prefHeight="72.0" prefWidth="351.0" stylesheets="@../styles/main_button.css" text="All Sports" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/filter-tool-black-shape.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </MenuButton>
+            <Accordion prefWidth="294.0" VBox.vgrow="ALWAYS">
+              <panes>
+                <TitledPane fx:id="pnlNotifications" text="Notifications">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="listNotifications" layoutX="24.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <ImageView fx:id="imgRubbish" fitHeight="59.0" fitWidth="74.0" layoutX="145.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="144.0">
+                                 <image>
+                                    <Image url="@../icons/rubish-close.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imgPayment" fitHeight="150.0" fitWidth="74.0" layoutX="65.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="20.0">
+                                 <image>
+                                    <Image url="@../icons/payment-method.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                  </content>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/turn-notifications-on-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </TitledPane>
+                <TitledPane prefHeight="396.0" prefWidth="294.0" text="Reports">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="216.0" prefWidth="292.0" />
+                  </content>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/seo-report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </TitledPane>
+              </panes>
+            </Accordion>
+         </children>
+      </VBox>
+      <TabPane fx:id="mainTabs" layoutX="14.0" layoutY="79.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../styles/main_tab.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="70.0">
+        <tabs>
+          <Tab fx:id="sessionTab" text="Sessions">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane fx:id="sessionsPanel" layoutX="181.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="sessionTab1" text="Events">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane fx:id="eventsTabPane" prefHeight="200.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="Active">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <BorderPane fx:id="eventsPanel" layoutX="8.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="History">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <BorderPane fx:id="eventsHistoryPanel" layoutX="107.0" layoutY="57.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Misses">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane fx:id="missesPanel" layoutX="175.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="900.0" style="-fx-background-color: #e3e3e3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="235.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button fx:id="btnAddMember" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/main_button.css" text="Add Member">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/profile-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSearchMember" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/main_button.css" text="Search Members">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/profile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnActivateSportEvent" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/main_button.css" text="Activate Event">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/calendar-3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAddSportEvent" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/main_button.css" text="Add Event">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/calendar-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnDeleteSportEvent" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="100.0" stylesheets="@../styles/main_button.css" text="Delete Event">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/calendar-5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAddSession" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/main_button.css" text="Add Session">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/calendar-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnDeleteSession" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="100.0" stylesheets="@../styles/main_button.css" text="Delete Session">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/calendar-5.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnManageSports" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/side_buttons.css" text="Manage Sports">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/man-sprinting.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnFinancial" contentDisplay="TOP" mnemonicParsing="false" prefHeight="86.0" prefWidth="120.0" stylesheets="@../styles/side_buttons.css" text="Financial">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/graph.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="1035.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="71.0" prefWidth="236.0" style="-fx-background-color: #e3e3e3;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuButton fx:id="menuLoggiedInUser" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: transparent;" text="Logged in user ">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" top="20.0" />
+               </HBox.margin>
+            </MenuButton>
+            <ImageView fx:id="imgAvatar" fitHeight="70.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/avatars/char12.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
